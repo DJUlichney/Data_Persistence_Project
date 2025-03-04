@@ -8,6 +8,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    public static string playerName;
+
+    // Gets the player's name input. The name input is supplied as a parameter by the text field object.
+    public void UpdateName(string nameInput){
+        playerName = nameInput;
+        //Debug.Log(playerName);
+    }
+
     public void StartGame(){
         SceneManager.LoadScene(1);
     }
